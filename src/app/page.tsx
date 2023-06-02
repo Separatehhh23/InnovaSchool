@@ -1,13 +1,18 @@
 import React from 'react';
 import SideBar from '@/components/SideBar';
-import styles from '../styles/page.module.scss';
+import styles from '../styles/Page.module.scss';
 
 
 
 function App() {
   return (
-      <div className='flex'>
-        <SideBar />
+      <div className={styles.container}>
+        <div className='flex'>
+          <SideBar />
+          <>
+            <h1 className={styles.title}>InnovaSchool</h1>
+          </>
+        </div>
       </div>
   );
 }
