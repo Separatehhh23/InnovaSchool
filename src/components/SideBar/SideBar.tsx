@@ -1,7 +1,7 @@
 import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs';
 import { FaFire, FaPoo } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
-import { IoMdDownload } from 'react-icons/io'
+import { IoMdDownload, IoMdHome } from 'react-icons/io'
 import { ReactNode } from 'react';
 
 type SideBarIconProps = {
@@ -16,10 +16,9 @@ const SideBar = () => {
                     flex flex-col
                     bg-gray-100 text-gray-900 shadow-lg
                     dark:bg-gray-900 dark:text-white">
-      <SideBarIcon icon={<IoMdDownload size="28" />} text="Downloads" link="/downloads/downloads" />
-      <SideBarIcon icon={<BsPlus size="28" />} text="Plus" />
+      <SideBarIcon icon={<IoMdHome size="28" />} text="Home" link="/" />
+      <SideBarIcon icon={<IoMdDownload size="28" />} text="Downloads" link="/downloads/" />
       <SideBarIcon icon={<BsFillLightningFill size="28" />} text="Lightning" />
-      <SideBarIcon icon={<FaPoo size="28" />} text="Poo" />
     </div>
   );
 };
