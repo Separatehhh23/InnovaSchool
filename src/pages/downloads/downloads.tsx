@@ -1,10 +1,8 @@
 import React from 'react';
 import SideBar from '@/components/SideBar/SideBar';
 import styles from './DownloadPage.module.scss';
-import layout from '../../app/layout';
 
 function downloads() {
-    layout;
     return (
         <div className={styles.container}>
             <div className='flex'>
