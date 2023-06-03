@@ -1,4 +1,5 @@
 $bg-color: #151019;
+$accent-color: #88C7FD;
 
 .container {
   display: flex;
@@ -46,7 +47,7 @@ $bg-color: #151019;
   padding: 20px;
   font-weight: 400;
   text-align: center;
-  border: 4px outset #88C7FD;
+  border: 4px outset $accent-color;
   border-radius: 16px;
   background: linear-gradient(90deg, #ff0000, #ff00f3, #0033ff, #ff0077);
   background-size: 400%;
