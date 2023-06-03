@@ -18,23 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
-
-$bg-color: #151019;
-$accent-color: #88C7FD;
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url('../../../public/images/bg.png');
+  background-image: url("../../../public/images/bg.png");
   background-size: cover;
   margin: 0px;
   overflow: hidden;
@@ -43,7 +35,7 @@ $accent-color: #88C7FD;
 }
 
 .heading {
-  color: white;
+  color: #fff;
   font-size: 2rem;
   margin: 0px;
   padding: 20px;
@@ -63,13 +55,13 @@ $accent-color: #88C7FD;
   margin: 0.5rem;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   outline: none;
-  border-radius: 0.25rem; /* Add rounded corners */
+  border-radius: 0.25rem;
 }
 
 .list {
-    display: inline-flex;
-    border: 4px outset $accent-color;
-    vertical-align: top;
+  display: inline-flex;
+  border: 4px outset #88c7fd;
+  vertical-align: top;
 }
