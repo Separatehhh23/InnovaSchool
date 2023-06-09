@@ -1,8 +1,7 @@
 "use client"
 
-import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs';
-import { FaFire, FaPoo } from 'react-icons/fa';
-import { FiGithub, FiSun, FiMoon } from 'react-icons/fi';
+import { BsFillLightningFill, BsGearFill } from 'react-icons/bs';
+import { FiSun, FiMoon } from 'react-icons/fi';
 import { IoMdDownload, IoMdHome } from 'react-icons/io';
 import { ReactNode } from 'react';
 import { useDarkMode, useIsClient } from 'usehooks-ts';
@@ -21,15 +20,14 @@ const SideBar = () => {
 
   if (!isClient) {
     return (
-      <div
-      className={`fixed top-0 left-0 h-screen transition-colors w-16 m-0
-                  flex flex-col
-                bg-gray-100 text-gray-900 shadow-lg`}
+      <div      className={`fixed top-0 left-0 h-screen transition-colors w-16 m-0
+                            flex flex-col
+                          bg-gray-100 text-gray-900 shadow-lg`}
     >
       <SideBarIcon icon={<IoMdHome size="28" />} text="Home" link="/" />
       <SideBarIcon icon={<IoMdDownload size="28" />} text="Downloads" link="/downloads/" />
-      <SideBarIcon icon={<BsFillLightningFill size="28" />} text="Lightning" />
-      <SideBarIcon icon={<FiMoon size="28" />} text="Toggle Dark Mode" />
+      <SideBarIcon icon={<BsFillLightningFill size="28" />} text="Lightning" link="#" />
+      <SideBarIcon icon={<FiMoon size="28" />} text="Toggle Dark Mode" link="#" />
     </div>
     );
   }
@@ -43,7 +41,7 @@ const SideBar = () => {
     >
       <SideBarIcon icon={<IoMdHome size="28" />} text="Home" link="/" />
       <SideBarIcon icon={<IoMdDownload size="28" />} text="Downloads" link="/downloads/" />
-      <SideBarIcon icon={<BsFillLightningFill size="28" />} text="Lightning" />
+      <SideBarIcon icon={<BsFillLightningFill size="28" />} text="Lightning" link="#" />
       <SideBarIcon
         icon={isDarkMode ? <FiSun size="28" /> : <FiMoon size="28" />}
         text="Toggle Dark Mode"
