@@ -3,7 +3,6 @@
 import { BsFillLightningFill } from 'react-icons/bs';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { IoMdDownload, IoMdHome } from 'react-icons/io';
-import { ReactNode } from 'react';
 import { useDarkMode, useIsClient } from 'usehooks-ts';
 import SideBarIcon from './SideBarIcon';
 
