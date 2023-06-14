@@ -14,8 +14,7 @@ type SideBarIconProps = {
 };
 
 const SideBar = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
-  const { toggle, enable, disable } = useDarkMode();
+  const { isDarkMode, toggle } = useDarkMode();
 
   return (
     <div
@@ -29,7 +28,7 @@ const SideBar = () => {
       <SideBarIcon
         icon={isDarkMode ? <FiSun size="28" /> : <FiMoon size="28" />}
         text="Toggle Dark Mode"
-        onClick={() => setDarkMode(prevMode => !prevMode)}
+        onClick={() => toggle}
       />
     </div>
   );
