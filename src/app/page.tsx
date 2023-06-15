@@ -8,7 +8,7 @@ function App() {
         <div className='flex'>
           <SideBar />
 
-          <h1 className={styles.title}>InnovaSchool</h1>
+          <h1 className={styles.title}>PyLinker</h1>
         </div>
       </div>
   );
