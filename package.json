@@ -1,7 +1,11 @@
 {
-  "name": "innovaschool",
+  "name": "pylinker",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "separatehhh23",
+    "email": "separatehhh23@pylinker.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
