@@ -50,6 +50,7 @@ const SideBar = () => {
           icon={isDarkMode ? <FiSun size="28" /> : <FiMoon size="28" />}
           text="Toggle Dark Mode"
           onClick={toggle}
+          link="#"
         />
       </div>
       
@@ -61,7 +62,7 @@ const SideBar = () => {
         {/*<SideBarIcon icon={<IoMdLogOut size="28" />} text="Log Out" link="#" />
         <SideBarIcon icon={<IoMdLogIn size="28" />} text="Log In" link="#" />
         <SideBarIcon icon={<IoMdPersonAdd size="28" />} text="Sign Up" link="/register" />
-  <SideBarIcon icon={<IoMdPerson size="28" />} text="Profile" link="/profile" />*/}
+        <SideBarIcon icon={<IoMdPerson size="28" />} text="Profile" link="/profile" />*/}
       </div>
     </>
   );
