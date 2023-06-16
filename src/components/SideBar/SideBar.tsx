@@ -27,10 +27,9 @@ const SideBar = () => {
                       bg-gray-100 text-gray-900 shadow-lg
                         ${isDarkMode ? 'dark:bg-gray-900 dark:text-gray-100' : ''}`}
         >
-          {/*<SideBarIcon icon={<IoMdLogOut size="28" />} text="Log Out" link="#" />
-          <SideBarIcon icon={<IoMdLogIn size="28" />} text="Log In"  link="#" />
-          <SideBarIcon icon={<IoMdPersonAdd size="28" />} text="Sign Up" link="/register" />
-          <SideBarIcon icon={<IoMdPerson size="28" />} text="Profile" link="/profile" />*/}
+          <SideBarIcon icon={<IoMdLogIn size="28" />} text="Log In"  link="/api/auth/login" />
+          <SideBarIcon icon={<IoMdLogOut size="28" />} text="Log Out" link="/api/auth/logout" />
+          <SideBarIcon icon={<IoMdPerson size="28" />} text="Profile" link="/profile" />
         </div>
       </>
     );
@@ -59,10 +58,9 @@ const SideBar = () => {
                     bg-gray-100 text-gray-900 shadow-lg
                       ${isDarkMode ? 'dark:bg-gray-900 dark:text-gray-100' : ''}`}
       >
-        {/*<SideBarIcon icon={<IoMdLogOut size="28" />} text="Log Out" link="#" />
-        <SideBarIcon icon={<IoMdLogIn size="28" />} text="Log In" link="#" />
-        <SideBarIcon icon={<IoMdPersonAdd size="28" />} text="Sign Up" link="/register" />
-        <SideBarIcon icon={<IoMdPerson size="28" />} text="Profile" link="/profile" />*/}
+        <SideBarIcon icon={<IoMdLogIn size="28" />} text="Log In" link="/api/auth/login" />
+        <SideBarIcon icon={<IoMdLogOut size="28" />} text="Log Out" link="/api/auth/logout" />
+        <SideBarIcon icon={<IoMdPerson size="28" />} text="Profile" link="/profile" />
       </div>
     </>
   );

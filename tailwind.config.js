@@ -32,6 +32,9 @@ module.exports = {
             100: '#f2f3f5',
           },
       },
+      fontFamily: {
+        sans: ['var(--font-inter']
+      }
     },
   },
   plugins: [],
