@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url("../../../public/images/bg.png");
   background-size: cover;
   margin: 0px;
   overflow: hidden;
@@ -42,4 +41,5 @@
   display: inline-flex;
   border: 4px outset #88c7fd;
   vertical-align: top;
+  border-radius: 0.25rem;
 }

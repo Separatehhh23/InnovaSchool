@@ -16,16 +16,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer components {
 
   .sidebar-icon {
@@ -36,6 +26,17 @@ body {
            rounded-3xl hover:rounded-xl
            transition-all duration-300 ease-linear
            cursor-pointer;
+  }
+
+  .sidebar-icon-b {
+    @apply relative flex items-center justify-center
+           h-12 w-12 mt-2 mb-2 mx-auto
+           bg-gray-800 text-green-500
+           hover:bg-green-600 hover:text-white
+           rounded-3xl hover:rounded-xl
+           transition-all duration-300 ease-linear
+           cursor-pointer;
+    order: 1;
   }
 
   .sidebar-tooltip {

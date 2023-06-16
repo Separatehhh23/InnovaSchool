@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 
 type SideBarIconProps = {
-    icon: ReactNode;
-    text?: string;
-    link?: string;
-    onClick?: () => void;
+  icon: ReactNode;
+  text?: string;
+  link?: string;
+  onClick?: () => void;
 };
 
 const SideBarIcon = ({ icon, text, link, onClick }: SideBarIconProps) => (
